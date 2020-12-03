@@ -81,9 +81,9 @@ img.card {
 li {
   list-style-type: none;
 }
-
+/* 
 li.liStyles:before { 
   content: '\2713'; 
   margin-left: -425px; 
-  /* margin-right: 10px;  */
-} 
+  margin-right: 10px; 
+}  */
