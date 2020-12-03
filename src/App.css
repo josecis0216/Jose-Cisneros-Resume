@@ -55,17 +55,21 @@ img.card {
   align-items: center;
 }
 
-.containerStylesRow {
+.pStyles {
+  max-width: 950px;
+  margin: auto;
+  padding: 20px 0px;
+} 
+
+.containerStylesHeadshot {
   max-width: 950px;
   margin: auto;
   display: flex;
-  padding: 25px 0px;
+  /* padding: 25px 200px; */
 }
 
 .cardStyles {
   padding: 50px 25px;
-  width: 18rem;
-  text-align: left;
 }
 
 .jobStyles {
@@ -73,10 +77,19 @@ img.card {
 }
 
 .containerCards {
-  padding: 35px 0px;
+  padding: 35px 15px;
   height: 100%;
 }
 
 li {
   list-style-type: none;
+}
+
+.ulStyles {
+  font-weight: bold;
+
+}
+
+.checkMark {
+  margin-left: -15px;
 }

@@ -72,8 +72,8 @@ class Contact extends Component {
                         <iframe
                             title="Current Employment, Sendsations" 
                             src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d387941.29817548196!2d-112.1575209545185!3d40.568283753127616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d40.858930799999996!2d-111.8926302!4m5!1s0x874d84c33f734179%3A0x24ad0a58576a779e!2sSendsations%2C%201074%20Industrial%20Park%20Rd%2C%20Orem%2C%20UT%2084057%2C%20United%20States!3m2!1d40.3162581!2d-111.72694759999999!5e0!3m2!1sen!2sus!4v1606586155999!5m2!1sen!2sus" 
-                            width="600" 
-                            height="450" 
+                            width="400" 
+                            height="250" 
                             frameBorder="0" 
                             style={{ border:0 }}
                             allowFullScreen="" 
