@@ -123,7 +123,7 @@ class BodyContent extends Component {
                         <div className="col-lg-3 col-sm-12"></div>
                     </div>
                 </div>
-                <div className="card-deck cardStyles">
+                <div className="card-deck cardStyles" id="projects">
                     <div className="card containerCards">
                         <img className="card-img-top" src={vb} alt="visual basic logo" style={{height: 12+'rem', width:'auto'}}/>
                         <div className="card-body">
