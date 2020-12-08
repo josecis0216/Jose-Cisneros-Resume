@@ -6,8 +6,8 @@ import spikeJones from '../images/spikeJones.jpg';
 import Moment from 'moment';
 
 class BodyContent extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             name: "Jose Cisneros",
             email: "josecis0216@gmail.com",
@@ -16,6 +16,7 @@ class BodyContent extends Component {
             isLoaded: false,
             items: []
         };
+        this.showCurrentDate = this.showCurrentDate.bind(this);
       }
     componentDidMount() {
         fetch("https://jose-jobs-api.herokuapp.com/jobs")
@@ -65,10 +66,11 @@ class BodyContent extends Component {
                     <div className="row"> 
                         {items.map(item => (
                             <div className="col-lg-4 col-sm-12">
-                            <h4 className="jobStyles" key={item.job}>{item.job}</h4>
+                            <h4 className="jobStyles" key={item.id}>{item.job}</h4>
                             <h5>{item.position}</h5>
                             <h6>From: {Moment(item.startDate).format('MM/DD/YYYY')}</h6>
                             <h6>To: {Moment(item.endDate).format('MM/DD/YYYY')}</h6>
+                            {/* <h6 onLoad={this.showCurrentDate(item.endDate)}>To: </h6> */}
                             <p style={{textAlign:"left"}}>{item.description}</p>
                             </div>
                         ))}
@@ -123,7 +125,7 @@ class BodyContent extends Component {
                 </div>
                 <div className="card-deck cardStyles">
                     <div className="card containerCards">
-                        <img className="card-img-top" src={vb} alt="visual basic logo" style={{height: 12+'rem'}}/>
+                        <img className="card-img-top" src={vb} alt="visual basic logo" style={{height: 12+'rem', width:'auto'}}/>
                         <div className="card-body">
                             <h5 className="card-title">Time Clock in VB</h5>
                             <p className="card-text">I developed a time clock that is used at my current workplace. The functionality includes,
@@ -155,6 +157,17 @@ class BodyContent extends Component {
                 </div>
             </div>
       );}
+    }
+
+     showCurrentDate(endDate) {
+        var end = endDate;
+        var t = new Date();
+        t = Date.now
+        if (end > t) {
+            return end = "Current"
+        } 
+        else       
+        return Moment(end).format('MM/DD/YYYY');
     }
 }
 export default BodyContent;

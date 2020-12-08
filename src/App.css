@@ -1,6 +1,7 @@
 .App {
   /* text-align: center; */
   background-color: lightgrey;
+  overflow-x: hidden;
 }
 
 .App-logo {
@@ -92,4 +93,18 @@ li {
 
 .checkMark {
   margin-left: -15px;
+  margin-bottom: -20px;
+}
+
+@media screen and (max-width: 700px) {
+  .checkMark {
+    display: none;
+  }
+}
+
+
+@media screen and (min-width: 701px) {
+  .checkMark {
+    display: block;
+  }
 }
