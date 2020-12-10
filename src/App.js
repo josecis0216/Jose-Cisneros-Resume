@@ -28,6 +28,7 @@ import './App.css';
 import Nav from './Components/Nav'
 import BodyContent from './Components/BodyContent'
 import Contact from './Components/Contact';
+import Admin from './Components/Admin'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 
@@ -41,6 +42,7 @@ class App extends Component {
         {/* <BodyContent info={joseInfo} /> */}
         <Route path="/" exact component={BodyContent} />
         <Route path="/contact" exact component={Contact} />
+        <Route path="/admin" exact component={Admin} />
       </div>
       </Switch>
     </Router>
